@@ -3,7 +3,7 @@
 
 *Aviso: O seguinte contexto é completamente fictício, a empresa, o CEO, as questões de negócios foram criadas apenas para desenvolvimento do projeto e se baseiam em um desafio do Kaggle.*
 
-Atualmente, a Rossmann é uma das maiores redes de drogarias da Europa, operando em 7 países, e com 3000 unidades em operação, devido ao grande sucesso de vendas o CEO da companhia deseja reformar todas as suas lojas, dessa forma, foi solicitado aos gerentes que fosse realizado previsões de vendas de suas respectivas lojas para as próximas 6 semanas. As vendas são influenciadas por diversos fatores, como por exemplo: feriados nacionais e escolares, promoções, sazonalidade, localidade, entre outros.
+Atualmente, a Rossmann é uma das maiores redes de drogarias da Europa, operando em 7 países, e com mais de 3000 unidades em operação, devido ao grande sucesso de vendas o CEO da companhia deseja reformar todas as suas lojas, dessa forma, foi solicitado aos gerentes que fosse realizado previsões de vendas de suas respectivas lojas para as próximas 6 semanas. As vendas são influenciadas por diversos fatores, como por exemplo: feriados nacionais e escolares, promoções, sazonalidade, localidade, entre outros.
 
 A necessidade de fazer as previsões de vendas das lojas para as próximas 6 semanas será essencial para que o CEO e CFO possa antecipar o valor do budget das respectivas lojas para que todas elas sejam reformadas de acordo com sua realidade, sendo assim, o trabalho desenvolvido nesse projeto será de prever as vendas das próximas 6 semanas para cada uma das lojas de forma assertiva e com resultados confiáveis.
 
