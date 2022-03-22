@@ -83,3 +83,34 @@ Utilizamos os seguintes algoritmos para fazermos as previsões:
 |  XGBoost Regressor	  | 1030.28 +/- 167.19 | 0.14 +/- 0.02   | 1478.26 +/- 229.79 |
 |  Linear Regression	  | 2081.73 +/- 295.63 | 0.3 +/- 0.02   | 2952.52 +/- 468.37 |
 |  Lasso	  | 2116.88 +/- 341.01 | 0.3 +/- 0.01	   | 3057.6 +/- 504.57 |
+
+
+**EXEMPLO DE RESULTADOS OBTIDOS COM XGBOOST REGRESSOR**
+
+|store | predictions |	worst_scenario |	best_scenario |	MAE |	MAPE|
+|-----|------------|----------------|------------------|------|-----|
+|640 |	211345.344 |	210704.256 |	211986.431 |	641.088 |	0.146|
+|648 |	140468.109 |	140011.984 |	140924.235 |	456.125 |	0.158|
+|54	|	178211.078 |	177757.284	| 178664.873 |	453.795 |	0.098|
+|56 |	322277.000 |	321396.202 |	323157.798 |	880.798 |	0.111|
+|831 |	242428.203 |	241868.990 |	242987.416 |	559.213 |	0.086|
+
+**MELHOR E PIOR CENÁRIO DE VENDAS**
+
+| Cenário | Valores   |
+|-----------|---------|
+|  Predições	  | R$286,435,616.00|
+|  Pior Cenário	  | R$285,579,535.55 |
+|  Melhor Cenário	  | R$287,291,675.73 |
+
+# Modelo em Produção
+
+Um dos pilares ao desenvolver esse projeto, é que seria de fácil acesso as previsões para cada loja da rede Rossmann, podendo ser acessado de qualquer lugar, para isso foi desenvolvido um bot no telegram, que faz as requisições na API, e lhe devolve a previsão de vendas para a loja requisitada, basta colocar o ''/'' + número da loja desejada, que o bot irá lhe informar a previsão de venda para as próximas 6 semanas da loja em questão, ex: /22.
+
+[![image](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/sales_predict_bot)
+
+# Conclusão e Próximos Passos
+
+Após concluído esse primeiro ciclo do projeto, notamos que tivemos um bom desempenho por parte do nosso algoritmo de previsão mesmo diante de uma grandeza dos números previstos, fizemos uma análise exploratória dos dados que foi determinante para o entendimento de negócio e escolha das features para treinamento do modelo, em projetos de data science, com certeza uma boa análise exploratória dos dados é determinante para o sucesso do mesmo, não devemos poupar qualquer esforço nessa etapa tão importante.
+
+Como próximos passos para este mesmo projeto, podemos refiná-lo ainda mais, por utilizar de séries temporais, tratar dados faltantes de formas diferentes, trabalhar com novas features, e assim buscar uma perfomance ainda melhor do que essa que tivemos.
