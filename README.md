@@ -84,6 +84,9 @@ Utilizamos os seguintes algoritmos para fazermos as previsões:
 |  Linear Regression	  | 2081.73 +/- 295.63 | 0.3 +/- 0.02   | 2952.52 +/- 468.37 |
 |  Lasso	  | 2116.88 +/- 341.01 | 0.3 +/- 0.01	   | 3057.6 +/- 504.57 |
 
+- MAE (Mean Absolute error) - Mostra o erro médio absoluto do modelo, tanto para mais quanto para menos.
+- MAPE (Mean Absolute percentage error) - Erro médio absoluto em percentual.
+- RMSE (Root mean squared error) - Erro médio absoluto quadrado, erro médio absoluto elevado ao quadrado. Não é a melhor métrica para uma análise de negócios, porém é muito util para avaliar a performance do modelo em si.  
 
 **EXEMPLO DE RESULTADOS OBTIDOS COM XGBOOST REGRESSOR**
 
