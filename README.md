@@ -1,5 +1,8 @@
 **PROJETO EM FASE FINAL**
 
+![image](https://user-images.githubusercontent.com/95088918/159572878-52a943df-c8c8-458f-b2cd-3b3a62ebf331.png)
+
+
 # 
 ![image](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Rossmann_Logo.svg/2560px-Rossmann_Logo.svg.png)
 
@@ -48,3 +51,35 @@ A necessidade de fazer as previsões de vendas das lojas para as próximas 6 sem
 | Promo2                           | Promo2 é uma promoção contínua e consecutiva para algumas lojas: 0 = a loja não está participando, 1 = a loja está participando |
 | Promo2Since[Year/Week]           | Descreve o ano e a semana em que a loja começou a participar da Promo2 |
 | PromoInterval                    | Descreve os intervalos consecutivos de início da promoção 2, nomeando os meses em que a promoção é iniciada novamente. Por exemplo. "Fev, maio, agosto, novembro" significa que cada rodada começa em fevereiro, maio, agosto, novembro de qualquer ano para aquela loja |
+
+# Top 3 Insights
+
+**1. Lojas vendem mais depois do dia 10 de cada mẽs**
+
+![image](https://user-images.githubusercontent.com/95088918/159571814-62036a6f-02eb-4c39-8f2d-5176d8dfe1e5.png)
+
+**2. Lojas com maior sortimento vendem menos**
+
+![image](https://user-images.githubusercontent.com/95088918/159572208-5065c562-f7c9-4e28-9d3a-0ca7f2aaf992.png)
+
+**3. Lojas vendem menos aos finais de semana**
+
+![image](https://user-images.githubusercontent.com/95088918/159572568-b2257f1b-af5f-4ec6-81aa-a0519ad5f052.png)
+
+# Modelos de Machine Learning Utilizados Durante o Projeto
+
+Utilizamos os seguintes algoritmos para fazermos as previsões:
+- Modelo de média para termos uma base de comparação para os modelos posteriores
+- Linear Regression;
+- Linear Regression Regularized (Lasso);
+- Random Forest Regressor;
+- XGBoost Regressor. 
+
+**RESULTADOS OBTIDOS COM APLICAÇÃO DO CROSS VALIDATION**
+
+| Model Name | MAE CV   | MAPE CV      | RMSE CV |
+|-----------|---------|-----------|---------|
+|  Random Forest Regressor  | 837.17 +/- 219.74| 0.12 +/- 0.02  | 1256.87 +/- 319.67 |
+|  XGBoost Regressor	  | 1030.28 +/- 167.19 | 0.14 +/- 0.02   | 1478.26 +/- 229.79 |
+|  Linear Regression	  | 2081.73 +/- 295.63 | 0.3 +/- 0.02   | 2952.52 +/- 468.37 |
+|  Lasso	  | 2116.88 +/- 341.01 | 0.3 +/- 0.01	   | 3057.6 +/- 504.57 |
