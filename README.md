@@ -24,7 +24,7 @@ A necessidade de fazer as previsões de vendas das lojas para as próximas 6 sem
 
 5. **Preparação dos dados para os algoritmos de machine learning** - Nessa etapa os dados foram transformados e preparados para que os algoritmos ML possam perfomar bem, é fundamental deixar os dados preparados para termos o melhor desempenho possível dos algoritmos, também dividimos os dados entre treino, teste e validação, alem de realizarmos uma cross-validation para termos a certeza que realmente as previsões são confiáveis.
 
-6. **Aplicação e treinamento do algoritmo de machine learning** - Fizemos as seleções dos algoritmos a serem implantadados e o treinamos com os dados já processados e prontos, utilizamos cada algoritmo com seus paramêtros e realizamos também o cross validation para realmente termos certeza da eficácia do algoritmo.
+6. **Aplicação e treinamento do algoritmo de machine learning** - Fizemos as seleções dos algoritmos a serem implantados e o treinamos com os dados já processados e prontos, utilizamos cada algoritmo com seus paramêtros e realizamos também o cross validation para realmente termos certeza da eficácia do algoritmo.
 
 7. **Avaliaçao do modelo** - Aqui fizemos uma avaliação final do modelo para sabermos se já poderia ser feito uma primeira entrega de qualidade do projeto, passando por todos os ciclos do CRISP.
 
