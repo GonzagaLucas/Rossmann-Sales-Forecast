@@ -1,5 +1,3 @@
-**PROJETO EM FASE FINAL**
-
 ![image](https://user-images.githubusercontent.com/95088918/159572878-52a943df-c8c8-458f-b2cd-3b3a62ebf331.png)
 
 
@@ -31,6 +29,17 @@ A necessidade de fazer as previsões de vendas das lojas para as próximas 6 sem
 8. **Tradução para negócio** - Finalizado a etapa de preparação, treinamento, aplicação, e previsão usando os modelos de machine learning, nessa etapa traduzimos os resultados obtidos para valores e termos de negócio, para que pessoas sem conhecimento técnico possam entender e compreender os resultados.
 
 9. **Deploy do modelo** - Disponibilizamos o modelo pronto que pode ser acessado através de um bot criado no Telegram, o modelo foi colocado em produção em uma nuvem do Heroku.
+
+# Ferramentas Utilizadas
+ 
+ - Python;
+ - Jupyter Notebook;
+ - Git e Github;
+ - Heroku Cloud;
+ - Algoritmos de Classificação e Regressão;
+ - Pacotes de Machine Learning Sklearn e Scipy;
+ - Técnicas de Seleção de Atributos e Redução de Dimensionalidade
+ - Flask e Python API's
 
 # Atributos
 
@@ -98,6 +107,8 @@ Utilizamos os seguintes algoritmos para fazermos as previsões:
 |56 |	322277.000 |	321396.202 |	323157.798 |	880.798 |	0.111|
 |831 |	242428.203 |	241868.990 |	242987.416 |	559.213 |	0.086|
 
+Decidimos prosseguir com o algoritmo do XGBoost Regressor para colocarmos o modelo em produção, uma vez que após a configuração dos hiperparâmetros conseguimos resultados satisfatórios, e também é um algoritmo bem mais leve em comparação com a Random Forest. 
+
 **MELHOR E PIOR CENÁRIO DE VENDAS**
 
 | Cenário | Valores   |
@@ -115,5 +126,7 @@ Um dos pilares ao desenvolver esse projeto, é que seria de fácil acesso as pre
 # Conclusão e Próximos Passos
 
 Após concluído esse primeiro ciclo do projeto, notamos que tivemos um bom desempenho por parte do nosso algoritmo de previsão mesmo diante de uma grandeza dos números previstos, fizemos uma análise exploratória dos dados que foi determinante para o entendimento de negócio e escolha das features para treinamento do modelo, em projetos de data science, com certeza uma boa análise exploratória dos dados é determinante para o sucesso do mesmo, não devemos poupar qualquer esforço nessa etapa tão importante.
+
+Também conseguimos melhorar consideravelmente a gestão da empresa, uma vez que eles anotavam em planilhas e faziam as previsões através de média móvel, com as previsões através do algoritmo, a taxa média de acerto é de 85%, um número expressivo diante da grandeza e expressividade dos números
 
 Como próximos passos para este mesmo projeto, podemos refiná-lo ainda mais, por utilizar de séries temporais, tratar dados faltantes de formas diferentes, trabalhar com novas features, e assim buscar uma perfomance ainda melhor do que essa que tivemos.
